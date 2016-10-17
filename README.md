@@ -1,7 +1,7 @@
 # hidden-markov-model
 ##概要
 隠れマルコフモデル(hedden markov model)をPythonで実装  
-無限隠れマルコフモデル(hedden markov model)をPythonで実装
+無限隠れマルコフモデル(infinite hedden markov model)をPythonで実装
 ##hidden_markov_model.pyの使い方(隠れマルコフモデル)
 ```python
 # Sample code.
