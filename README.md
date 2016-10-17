@@ -33,7 +33,6 @@ ihmm.set_param(alpha, beta, N, converge)
 ihmm.learn()
 ihmm.output_model()
 ```
-```
 ##入力フォーマット
 1単語をスペースで分割した1行1文形式  
 #(シャープ)記号を入れてコメントアウトを記述可能
@@ -44,4 +43,4 @@ ihmm.output_model()
 単語10 単語11 単語11 ...
 ...
 ```
-例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文章をdata.txtに保存
+例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文をdata.txtに保存
