@@ -68,6 +68,7 @@ class HMM:
                     diff = self.lkhds[-1] - self.lkhds[-2]
                     if math.fabs(diff) < self.converge:
                         break
+        self.n = i+1
 
     def likelihood(self):
         likelihoods = []
