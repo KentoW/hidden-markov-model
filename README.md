@@ -23,8 +23,8 @@ hmm.output_model()
 # Sample code.
 from infinite_hidden_markov_model import IHMM
 
-alpha = 0.01    # 初期ハイパーパラメータalpha
-beta = 0.01     # 初期ハイパーパラメータbeta
+alpha = 0.01    # 初期ハイパーパラメータalpha   ハイパーパラメータの値によって隠れ変数の数が変動する
+beta = 0.01     # 初期ハイパーパラメータbeta    ハイパーパラメータの値によって隠れ変数の数が変動する
 N = 1000        # 最大イテレーション回数
 converge = 0.01 # イテレーション10回ごとに対数尤度を計算し，その差分(converge)が小さければ学習を終了する
 
