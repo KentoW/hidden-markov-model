@@ -18,7 +18,7 @@ hmm.set_param(alpha, beta, K, N, converge)
 hmm.learn()
 hmm.output_model()
 ```
-##infinite_hidden_markov_model.pyの使い方(隠れマルコフモデル)
+##infinite_hidden_markov_model.pyの使い方(無限隠れマルコフモデル)
 ```python
 # Sample code.
 from infinite_hidden_markov_model import IHMM
@@ -44,3 +44,23 @@ ihmm.output_model()
 ...
 ```
 例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文をdata.txtに保存
+##出力フォーマット
+必要な情報は各自で抜き取って使用してください．
+```
+model	hidden_markov_model             # 学習の種類
+@parameter
+corpus_file	data.txt                    # トレーニングデータのPATH
+hyper_parameter_alpha	1.834245        # ハイパーパラメータalpha
+hyper_parameter_beta	0.089558        # ハイパーパラメータbeta
+umber_of_hidden_variable	10          # 隠れ変数の数
+number_of_iteration	121                 # 収束した時のイテレーション回数
+@likelihood         # 尤度
+initial likelihood	-1389.55970144
+last likelihood	-1382.11395248
+@vocaburary         # 学習で使用した単語v
+target_word	出産
+target_word	拓き
+target_word	土
+target_word	吉日
+target_word	遂げる
+...
