@@ -57,7 +57,7 @@ number_of_iteration	92                  # 収束した時のイテレーショ�
 @likelihood                             # 対数尤度
 initial likelihood	-546.599624598
 last likelihood	-511.957618247
-@vocaburaryA                            # 学習で使用した単語v
+@vocaburary                             # 学習で使用した単語v
 target_word	出産
 target_word	拓き
 target_word	土
@@ -76,6 +76,13 @@ trans_freq	1	2	5554
 trans_freq	1	3	4173
 trans_freq	1	4	105
 trans_freq	1	5	9487
+...
+word_sum	1	20123           # 単語分布に必要な情報(分母の数)    左の数字から順に 隠れ変数のID，その隠れ変数から生成される単語の数
+word_freq	1	い	1051        # 単語分布に必要な情報(分子の数)    左から順に 隠れ変数のID，その隠れ変数から生成される単語，と生成された頻度
+word_freq	1	人	785
+word_freq	1	いる	684
+word_freq	1	年	349
+word_freq	1	しまう	348
 ...
 @data
 # 戦勇。                    # コメント

@@ -6,7 +6,6 @@ import random
 import argparse
 import scipy.special
 from collections import defaultdict
-from prettyprint import pp
 
 BOS = 0
 EOS = -1
