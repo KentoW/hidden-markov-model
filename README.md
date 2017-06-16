@@ -1,8 +1,8 @@
 # hidden-markov-model
-##概要
+## 概要
 隠れマルコフモデル(hedden markov model)をPythonで実装  
 無限隠れマルコフモデル(infinite hedden markov model)をPythonで実装
-##hidden_markov_model.pyの使い方(隠れマルコフモデル)
+## hidden_markov_model.pyの使い方(隠れマルコフモデル)
 ```python
 # Sample code.
 from hidden_markov_model import HMM
@@ -18,7 +18,7 @@ hmm.set_param(alpha, beta, K, N, converge)
 hmm.learn()
 hmm.output_model()
 ```
-##infinite_hidden_markov_model.pyの使い方(無限隠れマルコフモデル)
+## infinite_hidden_markov_model.pyの使い方(無限隠れマルコフモデル)
 ```python
 # Sample code.
 from infinite_hidden_markov_model import IHMM
@@ -33,7 +33,7 @@ ihmm.set_param(alpha, beta, N, converge)
 ihmm.learn()
 ihmm.output_model()
 ```
-##入力フォーマット
+## 入力フォーマット
 1単語をスペースで分割した1行1文形式  
 先頭に#(シャープ)記号を入れてコメントアウトを記述可能
 ```
@@ -44,7 +44,7 @@ ihmm.output_model()
 ...
 ```
 例として[Wiki.py](https://github.com/KentoW/wiki)を使用して収集した アニメのあらすじ文をdata.txtに保存
-##出力フォーマット
+## 出力フォーマット
 必要な情報は各自で抜き取って使用してください．
 ```
 model	hidden_markov_model             # モデルの種類
